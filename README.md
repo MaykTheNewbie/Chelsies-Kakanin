@@ -1,2 +1,2 @@
-# Chelsie-s-Kakanin
+# Chelsies-Kakanin
 A small business website
