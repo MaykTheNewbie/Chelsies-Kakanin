@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chelsie's Kakanin – Homemade Goods</title>
+  <meta name="description" content="Chelsie's Kakanin: home-made kakanin, pancit, palabok, spaghetti and lumpiang shanghai for every handaan. Order through our social media.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Chelsie's Kakanin – Homemade Goods">
+  <meta property="og:description" content="Kakanin, pancit, palabok, spaghetti at lumpiang shanghai para sa bawat handaan. Order online!">
+  <meta property="og:image" content="ChelsieLogo.png">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#c2410c">
+  <link rel="apple-touch-icon" href="ChelsieLogo.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Chelsie's Kakanin">
+  <link rel="icon" type="image/png" href="ChelsieLogo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#menu">Skip to menu</a>
+
+  <header class="navbar" id="navbar">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#home"><img class="logo-img" src="ChelsieLogo.png" alt="" width="44" height="44"> Chelsie's Kakanin</a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#owner" class="nav-link">Meet the Owner</a>
+        <a href="#order" class="nav-link">How to Order</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#menu" class="btn btn-sm nav-cta">Order Now</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <span class="eyebrow">Home-made ni Chelsie</span>
+          <h1>Kakanin, pancit at pasta para sa bawat handaan.</h1>
+          <p>Mula sa malagkit na biko hanggang sa palabok, spaghetti at lumpiang shanghai, lahat ay luto ni Chelsie ayon sa order mo. Perfect for birthdays, fiestas, meetings at merienda.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#menu">See the Menu</a>
+            <a class="btn btn-ghost" href="#owner">Meet Chelsie</a>
+          </div>
+          <ul class="stats">
+            <li><strong>5</strong><span>Specialties + Fiesta Bundles</span></li>
+            <li><strong>Fresh</strong><span>Luto kapag may order</span></li>
+            <li><strong>Bilao</strong><span>Pang-handaan o pang-merienda</span></li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img class="hero-logo" id="hero-plate" src="ChelsieLogo.png" alt="Chelsie's Kakanin logo" width="380" height="380">
+          <span class="float f1">🥟</span><span class="float f2">🍚</span><span class="float f3">🍜</span><span class="float f4">🍮</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Menu</span>
+          <h2>Choose by category</h2>
+          <p>Pili ka ng kakanin, pancit/palabok/shanghai, pasta o Fiesta Bundle. Piliin ang size, tap Add, then send your order list to Chelsie.</p>
+        </div>
+        <div class="search-wrap"><input type="search" id="menu-search" placeholder="🔍 Hanapin ang pagkain (hal. biko, puto)" aria-label="Search the menu" autocomplete="off"></div>
+        <div class="catbar" id="catbar" role="tablist" aria-label="Menu categories"></div>
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="owner">
+      <div class="wrap">
+        <div class="owner reveal" id="owner-panel">
+          <div class="owner-photo media" id="owner-photo"></div>
+          <div class="owner-text">
+            <span class="eyebrow">Meet the Owner</span>
+            <h2 id="owner-name"></h2>
+            <p class="owner-role" id="owner-role"></p>
+            <blockquote id="owner-quote"></blockquote>
+            <div id="owner-bio"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="order">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Easy Ordering</span>
+          <h2>How to order</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><span class="step-no">1</span><h3>Pick your food</h3><p>Pili ng kakanin, pancit, pasta o shanghai at itakda ang dami.</p></div>
+          <div class="step reveal"><span class="step-no">2</span><h3>Send your order</h3><p>Buksan ang cart para i-check o i-edit ang order. Piliin kung pick up o delivery, ang petsa at oras, at ang payment (GCash, MariBank, Cash on Delivery o Cash on Pick-up). Kung GCash o MariBank, i-send ang screenshot ng payment sa Messenger. Press Send Order at bubukas ang Messenger na nakasulat na ang order mo.</p></div>
+          <div class="step reveal"><span class="step-no">3</span><h3>Pick up or delivery</h3><p id="step3-text">Kokompirmahin namin ang total at oras, tapos lulutuin namin ito nang sariwa.</p></div>
+        </div>
+        <div class="socials reveal" id="socials"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Contact us</h2>
+        </div>
+        <div class="contact">
+          <div class="contact-card reveal"><span class="ci">📞</span><strong>Phone / Viber</strong><span id="c-phone"></span></div>
+          <div class="contact-card reveal"><span class="ci">✉️</span><strong>Email</strong><span id="c-email"></span></div>
+          <div class="contact-card reveal"><span class="ci">📍</span><strong>Address</strong><span id="c-address"></span></div>
+          <div class="contact-card reveal"><span class="ci">🕒</span><strong>Open hours</strong><span id="c-hours"></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span class="logo"><img class="logo-img" src="ChelsieLogo.png" alt="" width="44" height="44"> Chelsie's Kakanin</span>
+      <span>© <span id="yr"></span> All rights reserved.</span>
+    </div>
+  </footer>
+
+  <div class="cartbar" id="cartbar" aria-live="polite">
+    <button type="button" class="cart-info" id="cart-open" aria-label="View my order"><strong id="cart-count">0 items</strong><span id="cart-total"></span></button>
+    <button type="button" class="btn btn-sm" id="cart-view">🛒 View Cart</button>
+  </div>
+
+  <div class="drawer" id="drawer" hidden>
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <aside class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      <header class="drawer-head">
+        <h2 id="drawer-title">My Order</h2>
+        <button type="button" class="drawer-close" id="drawer-close" aria-label="Close">×</button>
+      </header>
+      <div class="sent" id="sent">
+        <span class="sent-ico">✅</span>
+        <h3>Order ready!</h3>
+        <p class="sent-id" id="sent-id"></p>
+        <p id="sent-note"></p>
+        <pre class="sent-text" id="sent-text"></pre>
+        <button type="button" class="btn" id="sent-messenger">💬 Open Messenger</button>
+        <button type="button" class="btn btn-ghost" id="sent-copy">Copy order</button>
+        <button type="button" class="cart-clear" id="sent-done">Done</button>
+      </div>
+      <div class="drawer-body">
+        <div id="cart-items"></div>
+        <div class="fulfil" id="who">
+          <h3>Your details</h3>
+          <label class="field"><span>Full name (required)</span><input type="text" id="f-name" maxlength="60" autocomplete="name" placeholder="e.g. Juan Dela Cruz"></label>
+          <label class="field"><span>Notes for Chelsie (optional)</span><textarea id="f-note" rows="2" maxlength="200" placeholder="Special request, allergy, kung may gusto kang idagdag"></textarea></label>
+          <p class="pay-error" id="who-error" role="alert" hidden></p>
+        </div>
+        <div class="fulfil" id="fulfil">
+          <h3>Pick up or delivery</h3>
+          <div class="pay-options" id="fulfil-options" role="radiogroup" aria-label="Pick up or delivery">
+            <button type="button" class="pay-opt" role="radio" aria-checked="false" data-fulfil="pickup"><span class="pay-ico">🏪</span>Pick up</button>
+            <button type="button" class="pay-opt" role="radio" aria-checked="false" data-fulfil="delivery"><span class="pay-ico">🛵</span>Delivery</button>
+          </div>
+          <div class="field-row">
+            <label class="field"><span>Date needed</span><input type="date" id="f-date"></label>
+            <label class="field"><span>Time needed</span><input type="time" id="f-time"></label>
+          </div>
+          <div class="delivery-fields" id="f-delivery" hidden>
+            <label class="field"><span>Town</span><select id="f-town"></select></label>
+            <label class="field" id="f-brgy-wrap" hidden><span>Barangay</span><select id="f-brgy"></select></label>
+            <label class="field"><span>Complete address (house no., street, barangay)</span><textarea id="f-address" rows="3" maxlength="300" placeholder="House no., street, barangay"></textarea></label>
+            <p class="fee-note" id="fee-note"></p>
+          </div>
+          <p class="pay-error" id="fulfil-error" role="alert" hidden></p>
+        </div>
+        <div class="pay" id="pay">
+          <h3>Payment method</h3>
+          <div class="pay-options" id="pay-options" role="radiogroup" aria-label="Payment method"></div>
+          <p class="pay-detail" id="pay-detail" hidden></p>
+          <p class="pay-error" id="pay-error" role="alert" hidden>Pili muna ng payment method bago mag-send.</p>
+        </div>
+      </div>
+      <footer class="drawer-foot">
+        <div class="drawer-sub" id="drawer-sub-row" hidden><span>Subtotal</span><span id="drawer-sub"></span></div>
+        <div class="drawer-sub" id="drawer-fee-row" hidden><span>Delivery fee</span><span id="drawer-fee"></span></div>
+        <div class="drawer-total"><span>Total</span><strong id="drawer-total"></strong></div>
+        <div class="drawer-actions">
+          <button type="button" class="cart-clear" id="cart-clear">Clear all</button>
+          <button type="button" class="btn" id="cart-send">Send Order</button>
+        </div>
+      </footer>
+    </aside>
+  </div>
+
+  <button type="button" class="to-top" id="to-top" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="lightbox" id="lightbox" hidden><img alt=""><span class="lb-close" aria-hidden="true">×</span></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
