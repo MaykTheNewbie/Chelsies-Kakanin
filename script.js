@@ -79,7 +79,7 @@ var MENU = [
     sizes: [ { label: "50 pcs", price: 350 }, { label: "75 pcs", price: 550 }, { label: "100 pcs", price: 650 } ] },
   { cat: "Kakanin", emoji: "🥟", img: "PutoFlanHalfPutoPao.png", name: "Puto Pao & Half Flan", desc: "Half puto pao, half puto flan in one order.",
     sizes: [ { label: "50 pcs", price: 350 }, { label: "75 pcs", price: 550 }, { label: "100 pcs", price: 650 } ] },
-  { cat: "Kakanin", emoji: "🥚", img: "PutoPaoWithSaltedEgg.png", name: "Puto Pao with Salted Egg", desc: "Puto pao paired with salted egg in one order.",
+  { cat: "Kakanin", emoji: "🥚", img: "PutoPaoWithSaltedegg.png", name: "Puto Pao with Salted Egg", desc: "Puto pao paired with salted egg in one order.",
     sizes: [ { label: "50 pcs", price: 350 }, { label: "75 pcs", price: 550 }, { label: "100 pcs", price: 650 } ] },
   { cat: "Kakanin", emoji: "🍚", img: "Biko.png", name: "Biko", desc: "Sticky rice cooked in coconut milk and brown sugar, topped with latik.", badge: "Bestseller",
     sizes: [ { label: "Medium", price: 600 }, { label: "Large", price: 700 }, { label: "Extra Large", price: 900 } ] },
